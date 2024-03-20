@@ -1,0 +1,446 @@
+.header {
+    height: 4.1rem;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+.header-cont {
+    max-width: 100rem;
+    width: 100%;
+    height: 5.3rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gold;
+}
+
+.logo {
+    margin-left: 4rem;
+    max-width: 13rem;
+}
+.ul {
+    display: flex;
+    width: 20,5rem;
+    height: 1.25rem;
+}
+
+.navclass {
+    display: flex;
+    justify-content: space-between;
+    transition: all 2s;
+
+}
+.navclass.scroll{
+    background-color: gold;
+}
+
+.li {
+    width: 7rem;
+    height: 1.25rem;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0,1px;
+    text-align: center;
+    margin-right: 3rem;
+}
+.li-a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #251b0b;
+} 
+
+.button1 {
+    background-color: #b6983c;
+    width: 6,25rem;
+    height: 3rem;
+    border-radius: 1rem;
+    padding: 1rem ;
+    text-align: center;
+    margin-right: 2rem;
+}
+.button-p {
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+ .burgerclass {
+    position:absolute;
+    display: none;
+}
+.span {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    margin: 2px auto;
+    background: black;
+}
+
+                     
+
+
+
+
+                          /* accordion         */
+
+
+.accordion-wrapper {
+    max-width: 100rem;
+    width: 100%;
+    /* height: 25rem; */
+    background-color: #EB662B0D ;
+    margin-top: 1.8rem;
+   
+}
+
+.accordion-body{
+    max-width: 50rem;
+    width: 100%;
+   margin-bottom: 2rem;
+}
+.accordion-h3 {
+    position: relative;
+}
+.accordion-h3::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 1.2rem;
+    transform: translateY(-50%);
+}
+.accordion1 {
+    border: 0.2rem solid  rgba(153, 7, 7, 0.051);
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+
+}
+.accordion-p{
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: all 3s;
+}
+.accordion1.active .accordion-p{
+    height: 5rem;
+    width: 100%;
+}
+.accordion1.active .accordion-h3::before {
+    content: "-";
+}
+.accordion1.active .accordion-h3{
+    height: 4rem;
+    font-weight: 100;
+    font-size: 40px;   
+    color: #252113;
+    text-align: center;
+    word-spacing: 1rem;
+    row-gap: 2rem;
+}
+.accordion-h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1%;
+    margin: 0 25rem 3rem;
+}
+
+                  /* get info from server */
+.otherWinnersSection{                     
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    max-width: 100rem; 
+    justify-content: space-between;
+    row-gap: 5.6rem;
+}
+#otherWinnersID{
+    max-width: 100rem;
+    width: 100%;
+    background-color:antiquewhite ;
+    flex-direction:row;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.listUsers {
+    align-items: center;
+    margin: 4rem 0 0 4rem;
+    /* display: flex; */
+}
+
+                                /* -----------------  fetch    --------------- */
+
+
+.fetch-box{
+    width: 90%;
+    margin: 0 auto;
+    background-color:antiquewhite ;
+    margin-bottom: 4rem;
+}
+.three-box-wrapp {
+    max-width: 75rem;
+    margin: auto;
+    margin-top: 2.5rem;
+}
+
+.team {
+    text-align: center;
+    max-width: 55rem;
+}
+.team-h5{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+    color: #37393F;
+    margin-bottom: 2rem;
+}
+.team-h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #37393F;
+    margin-bottom: 2.5rem;
+}
+
+.three-box {
+    flex-direction: row;                      
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 72rem; 
+    justify-content: space-between;
+    row-gap: 5.6rem;
+    margin-top: 6.18rem;
+}
+
+.image-div {
+    position: relative;
+}
+.image-div-txt {
+    width: 13rem;
+    height: 5rem;
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 15rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.winnerName {
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    color: #37393F;
+    margin-bottom: 4px;
+}
+.winnerText {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 24.33px;
+    color: #7D7D7D;
+}    
+.winnerImg {
+    max-width: 25rem;
+    width: 100%;
+    height: 20rem;
+    position: relative
+}    
+.otherWinners {
+    margin-top: 2rem;
+} 
+                   
+
+                                        /* -----   swiper  ------ */
+
+
+.swiperSection{
+    max-width: 100rem;
+    width: 100%;
+    height: 50rem;
+    background-color: #EB662B0D ;
+    margin-top: 1.8rem;
+}
+.swiper {
+  width: 55rem;
+  height: 45rem;
+}
+.parfumePhoto{
+    max-width: 30rem; 
+    width: 100%;
+    margin: auto;
+    display: block;
+}  
+
+.parfumeTitle { 
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #37393F;
+    margin: 2rem 0 2.5rem;
+} 
+.parfumeText{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    color: #37393F;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin: 3rem;
+}
+.swiper-slide{
+    justify-content: center;
+    align-items: center;
+}
+                              
+                       /* form validastion */
+
+.form-validation {
+    max-width: 100rem;
+    width: 100%;
+    height: 30rem;
+    background-color: #EB662B0D ;
+    margin-top: 1rem;
+}
+#form{
+    width: 30rem;
+    height: 30rem;
+    margin: 2rem auto 0 auto;
+    padding: 3.1rem;
+    background-color: antiquewhite;
+    border-radius: 0.7rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+#form button {
+    padding: 1rem;
+    margin-top: 2.2rem;
+    width: 100%;
+    color: rgb(42, 7, 7);
+    background-color: gold;
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+}
+#form h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.input input {
+    border: 2px solid gold;
+    display: block;
+   padding: 0.4rem;
+   width: 100%;
+}
+.input.success input{
+    border-color: aquamarine;
+}
+.input.error input{
+    border-color: rgb(119, 12, 12);
+}
+
+
+
+                /* filter */
+.filterSection{
+    max-width: 100rem;
+    width: 100%;
+    height: 17rem;
+    background-color: #EB662B0D ;
+}
+.filter{
+    max-width: 30rem;
+    width: 100%;
+    height: 15rem;
+    margin: 0.4rem auto ;
+    padding: 2.1rem;
+    background-color: antiquewhite;
+    border-radius: 0.7rem;
+    text-align: center;
+}
+.filterH2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: rgb(249, 199, 133);
+}
+.filterUl{
+    font-size:1rem;
+    margin: 0.7rem;
+    color: rgb(238, 210, 174);
+}
+.filterUl li.hide {
+    display: none;
+}
+
+
+
+        /* scroll to top */
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    background-color: gold;
+    color: #fff;
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+
+           /* cookie */
+           
+#cookie {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    bottom: 0.3rem;
+    color: rgb(228, 122, 24);
+    background-color: rgba(218, 201, 51, 0.7);
+}
+.cookie-inner {
+    width: 75%;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+#cookie-btn {
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    cursor: pointer;
+    background-color: #e8b90e;
+    color: #fbfeff;
+    margin: auto;
+    margin-top: 0.6rem;
+    font-size: 1rem;
+}
+  
+.cookie {
+    max-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cookie a {
+    color: #ea8c09;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .cookie a:hover {
+    text-decoration: underline;
+    color: #f0323c;
+  }
+  .cookie p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 2rem;
+  }
+    

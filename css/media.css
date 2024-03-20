@@ -1,0 +1,165 @@
+.logo:hover {
+    box-shadow: 5px 10px #e4962f ;
+    transition: all 0.5s;
+    border-radius: 1rem;
+}
+.button1:hover {
+    box-shadow: 2px 4px #e4962f ;
+    background-color: #d4ab23;
+    transition: all 0.5s;
+}
+.li:hover {
+    height: 2rem;
+    transition: all 1s ;
+    background-color: #f2c15f;
+    box-shadow: 5px 10px #e4962f ;
+    transition: all 0.5s;
+    border-radius: 1rem;
+}
+.li-a:hover {
+    color:maroon;
+}
+
+
+@media (max-width:1024px){
+    .swiperSection{
+        max-width: 70rem;
+        width: 100%;
+    }
+    .swiper {
+        max-width: 50rem;
+        width: 100%;
+      }
+      .parfumePhoto{
+        max-width: 25rem; 
+        width: 100%;
+    } 
+    .parfumeText{
+        margin: 2rem;
+    } 
+    .parfumeTitle { 
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin: 2rem 0 ;
+    } 
+    .logo {
+        margin: 1.1rem ;
+        max-width: 10rem;
+    }
+    .li {
+        margin: 0.2rem 1rem;
+        align-items: center;
+        text-align: center;
+    } 
+    .cookie {
+        min-height: 3rem;
+      }
+}
+
+@media(max-width:720px){
+    .burgerclass{
+        display: block;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        position: fixed;
+    }
+    .navclass{
+        display: none;
+    }
+    .navclass.active {
+        display: block;
+    }
+    .header-cont{
+        flex-direction: column;
+    }
+    .button1{
+        display: none;
+    }
+    .burgerclass.active .span:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        background-color: #ffffff;
+        transition: 0.5s;
+    }
+    .burgerclass.active .span:nth-child(2){
+        opacity: 0;
+    }
+    .burgerclass.active .span:nth-child(3){
+        transform: translate(-8px)rotate(-45deg);
+        transition:0.5s;
+        background-color: #ffffff;
+    }
+    .ul {
+        margin: 0 auto;
+        flex-direction: column;
+        background-color:gold;
+        width: 20rem;
+        height: 10rem;
+        justify-content: center;
+        align-items: center;
+    } 
+    .li {
+        margin: 1.2rem;
+    } 
+    .logo {
+        margin: 1.6rem ;
+        max-width: 12rem;
+    }
+    .accordion-h2 {
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 1%;
+        margin: 0 12rem 3rem;
+    }
+    .form-validation {
+        max-width: 70rem;
+        width: 100%;
+    }
+    #form{
+        width: 25rem;
+        height: 30rem;
+        margin: 2rem auto 0 auto;
+        padding: 2.8rem;
+        font-size: 1rem;
+    }
+    #form button {
+        width: 70%;
+    }
+    #cookie {
+        min-height: 2.5rem;
+      }
+     #cookie-btn{
+        margin-top: -0.7rem;
+      }
+}
+
+@media(max-width:480px){
+    .accordion-wrapper {
+        max-width: 60rem;
+        width: 100%;
+        background-color: #EB662B0D ;
+        margin-top: 1.8rem;   
+    }
+    .accordion-h2 {
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 1%;
+        margin: 0 10rem 3rem;
+    }
+    .form-validation {
+        max-width: 40rem;
+        width: 100%;
+    }
+    #form{
+        width: 18rem;
+        height: 30rem;
+        margin: 2rem auto 0 auto;
+        padding: 2.8rem;
+        font-size: 1rem;
+    }
+    #form button {
+        font-size: 1.1rem;
+        width: 50%;
+    }
+
+}
